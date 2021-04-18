@@ -8,8 +8,6 @@ import ChatIcon from '@material-ui/icons/Chat';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
 import './home.css';
-import notif from '../../assets/notification.png';
-import aksi from '../../assets/icon-vertical.png';
 import me from '../../assets/me.jpeg';
 import people from '../../assets/user.png';
 import building from '../../assets/building.png';
@@ -184,7 +182,7 @@ export default function Home() {
                     onChange={(date) => {
                         getDate(date)
                     }}
-                    style={{ width: 0, position: 'absolute', left: '2.2rem', left: '2.2rem', bottom: 0, top: '.2em' }}
+                    style={{ width: 0, position: 'absolute', left: '2.2rem', bottom: 0, top: '.2em' }}
                 />
               </MuiPickersUtilsProvider>
             </div>

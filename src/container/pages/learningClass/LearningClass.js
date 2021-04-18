@@ -36,24 +36,26 @@ export default function LearningClass() {
                 pathName={pathName}
             />
             <div className="class">
-                <Tabs
-                    value={selectedTab}
-                    indicatorColor="primary"
-                    aria-label="disabled tabs example"
-                    style={{ outline: 'null', display: 'flex' }}
-                    classes={{ indicator: classes.tabsIndicator }}
-                >
-                    {
-                        tabMenu.map(el => {
-                            return (
-                                <Tab label={el.name}
-                                    style={{width: '50%', color: selectedTab === el.name ? '#8BC144' : 'rgb(222, 239, 198)', borderBottom: selectedTab === el.name ? '3px solid #8BC144' : null}}
-                                    onClick={() => setSelectedTab(el.name)}
-                                />
-                            )
-                        })
-                    }
-                </Tabs>
+                <Paper>
+                    <Tabs
+                        value={selectedTab}
+                        indicatorColor="primary"
+                        aria-label="disabled tabs example"
+                        style={{ outline: 'null', display: 'flex' }}
+                        classes={{ indicator: classes.tabsIndicator }}
+                    >
+                        {
+                            tabMenu.map(el => {
+                                return (
+                                    <Tab label={el.name}
+                                        style={{width: '50%', color: selectedTab === el.name ? '#8BC144' : 'rgb(222, 239, 198)', borderBottom: selectedTab === el.name ? '3px solid #8BC144' : null}}
+                                        onClick={() => setSelectedTab(el.name)}
+                                    />
+                                )
+                            })
+                        }
+                    </Tabs>
+                </Paper>
                 {
                     selectedTab === 'WAJIB' ?
                     tabWajib.map((el, idx) => (
