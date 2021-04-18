@@ -1,0 +1,21 @@
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    height: 50px;
+}
+
+#back {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: rgb(4, 87, 4);
+}
+
+#name {
+    color: rgb(4, 87, 4);
+    padding-right: 2em;
+}

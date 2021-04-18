@@ -1,0 +1,33 @@
+
+
+.class {
+    margin-top: 12px;
+    height: 110%;
+}
+
+.card {
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 21vh;
+}
+
+.btn-link {
+    width: 80vw;
+    margin: auto;
+    height: 35px;
+    background-color: #95C654;
+    border-radius: 5px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 7rem;
+    height: 1.5rem;
+}
